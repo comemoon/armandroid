@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/first"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/fu01" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <EditText
+                android:id= "@+id/edit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号" />
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="创建账号"
+
+        />
+    <Button
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_marginTop="50dp"  />
+    <RelativeLayout
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp" >
+        <Button
+            android:id="@+id/three1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快乐"/>
+        <Button
+            android:id="@+id/three2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开心"
+            android:layout_below="@id/three1"
+            android:layout_toRightOf="@+id/three1" />
+        <Button
+            android:id="@+id/three3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活"
+            android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/three4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来来"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/three5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排列"
+            android:layout_above="@+id/three4"
+            android:layout_toRightOf="@+id/three4" />
+        <Button
+            android:id="@+id/three6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欧克"
+            android:layout_alignParentRight="true"/>
+        <Button
+            android:id="@+id/three7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="员工"
+            android:layout_toLeftOf="@id/three6"
+            android:layout_below="@id/three6"/>
+        <Button
+            android:id="@+id/three8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欧冠"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/three9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奶茶"
+            android:layout_above="@id/three8"
+            android:layout_toLeftOf="@id/three8"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
